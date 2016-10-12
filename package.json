@@ -11,7 +11,9 @@
     "react-addons-css-transition-group": "^15.3.2",
     "react-bootstrap": "^0.30.5",
     "react-dom": "^15.3.2",
+    "react-motion": "^0.4.5",
     "react-responsive": "^1.1.5",
+    "react-swipeable-views": "^0.7.10",
     "react-tap-event-plugin": "^1.0.0"
   },
   "scripts": {

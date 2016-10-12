@@ -41,7 +41,7 @@ body {
 
 .fade-enter-active {
   right: 0px;
-  transition: 1s ease-in all;
+  transition: 0.5s ease-in;
 }
 
 .fade-leave {
@@ -50,5 +50,5 @@ body {
 
 .fade-leave-active {
   right: 500px;
-  transition: 1s ease-in all;
+  transition: 0.5s ease-in;
 }

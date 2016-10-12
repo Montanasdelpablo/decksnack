@@ -23,6 +23,8 @@ class MobileNav extends Component {
         <Col xs={12} md={12}>
             <AppBar
                 title="Decksnack"
+                style={{backgroundColor: '#444'}}
+                zDepth={2}
                 onTitleTouchTap={this.toggleMenu}
                 iconClassNameRight="muidocs-icon-navigation-expand-more"
                 />

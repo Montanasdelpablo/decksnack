@@ -58,32 +58,22 @@ class App extends Component {
     var header
     if (this.state.show){
 
-      header = <ReactCSSTransitionGroup
-              transitionName="fade" 
-              transitionEnterTimeout={500} 
-              transitionLeaveTimeout={500}>       
-            <Row key="normalheader" className="Header" >
+      header =  <Row key="normalheader" className="Header" >
                   <Col xs={12} md={12} lg={12} >
                       <img src={logo} className="App-logo" alt="logo" />
                       <h2>Decksnack</h2>
                       <LoginView />
                    </Col>
-              </Row>
-               </ReactCSSTransitionGroup>;
+              </Row>;
     } else {
       header = <MediaQuery  minWidth={1024}> 
-                <ReactCSSTransitionGroup
-              transitionName="fade" 
-              transitionEnterTimeout={500} 
-              transitionLeaveTimeout={500}>  
-                <Row key="mqheader" className="Header" >
+                 <Row key="mqheader" className="Header" >
                   <Col xs={12} md={12} lg={12} >
                       <img src={logo} className="App-logo" alt="logo" />
                       <h2>Decksnack</h2>
                       <LoginView />
                   </Col>
               </Row>
-               </ReactCSSTransitionGroup>
           </MediaQuery>;
     }
 
@@ -97,9 +87,13 @@ class App extends Component {
             <MediaQuery query='(max-width: 1780px)'>
              
             <Grid fluid={true}>
-            
+            <ReactCSSTransitionGroup
+              transitionName="fade"
+              transitionEnterTimeout={500}
+              transitionLeaveTimeout={500}   
+              >
               {header}
-           
+              </ReactCSSTransitionGroup>
 
               <MediaQuery query='(max-width: 1024px)'>
                  <MobileNav toggleMenu={this.toggleMenu.bind(this)}/>
