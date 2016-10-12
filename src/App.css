@@ -1,0 +1,54 @@
+body {
+  background-color: #222;
+}
+
+.Header {
+  text-align: center;
+  background-image: url("../public/first-clan-war-ever2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 425px;
+  padding: 40px;
+  color: white;
+  }
+
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.labelStyles {
+  width: 100%;
+  background-color: #444;
+}
+
+.fade-enter {
+  right: 500px;
+  }
+
+.fade-enter-active {
+  right: 0px;
+  transition: 1s ease-in all;
+}
+
+.fade-leave {
+  right: 0px;
+}
+
+.fade-leave-active {
+  right: 500px;
+  transition: 1s ease-in all;
+}
