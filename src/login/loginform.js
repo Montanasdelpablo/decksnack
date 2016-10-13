@@ -2,7 +2,7 @@ import { Component } from 'react';
 import React from 'react';
 import { Checkbox, FormGroup, Form, FormControl, Col } from 'react-bootstrap';
 import { RaisedButton } from 'material-ui';
-import ControlLabel from './controllabel.js';
+
 
 const styles = {
   headline: {

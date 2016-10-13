@@ -1,8 +1,8 @@
 import { Component } from 'react';
 import React from 'react';
-import { Checkbox, FormGroup, Form, FormControl, Grid, Row, Col } from 'react-bootstrap';
-import { RaisedButton } from 'material-ui';
-import ControlLabel from './controllabel.js';
+import { Grid, Row, Col } from 'react-bootstrap';
+
+
 import {Tabs, Tab} from 'material-ui/Tabs';
 
 import LoginForm from './loginform.js';

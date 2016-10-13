@@ -1,6 +1,6 @@
 import { Component } from 'react';
 import React from 'react';
-import { Checkbox, FormGroup, Form, FormControl, Col } from 'react-bootstrap';
+import { FormGroup, Form, FormControl, Col } from 'react-bootstrap';
 import { RaisedButton } from 'material-ui';
 import ControlLabel from './controllabel.js';
 
@@ -32,7 +32,7 @@ class SignUpForm extends Component {
                                         <FormGroup controlId="fromHorizontalUsername">
                                        
                                             <Col bsClass="labelStyles" componentClass={ControlLabel} sm={2}>
-                                                Username
+                                                <h3 style={styles.headline}> Username </h3>
                                             </Col>
                                         
                                             <Col sm={10}>
@@ -41,7 +41,7 @@ class SignUpForm extends Component {
                                         </FormGroup>
                                         <FormGroup controlId="fromHorizontalPassword">
                                             <Col componentClass={ControlLabel} sm={2}>
-                                                Password
+                                                <h3 style={styles.headline}> Password </h3>
                                             </Col>
                                             <Col sm={10}>
                                                 <FormControl type="password" placeholder="Password" />
