@@ -13,7 +13,7 @@ import MobileNav from './nav/mobilenav.js';
 import MQHeader from './header/mqheader.js';
 import NormalHeader from './header/normalheader.js';
 import Search from './search/search.js';
-import SearchResultsView from './search/searchresults.js';
+
 import CustomDeck from './customdeck/customdeck.js';
 
 
@@ -66,8 +66,8 @@ class App extends Component {
           </Grid>
           
           <Grid className="body"> 
-              <Search toggleDisplay={this.toggleDisplay} searchResults={store.searchResults}/>
-              <SearchResultsView display={this.state.display} searchResults={store.searchResults} />
+             
+              <Search search={store.search} />
               <CustomDeck />
           </Grid>
           </MediaQuery>

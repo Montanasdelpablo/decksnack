@@ -1,7 +1,7 @@
-import searchResults from './store/searchresults.js';
+import search from './store/search.js';
 
 const Store = {
-    searchResults,
+    search,
 }
 
 const store = Store
