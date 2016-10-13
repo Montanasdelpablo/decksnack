@@ -12,7 +12,7 @@ class ControlLabel extends Component {
         <div style={spanStyle}>
           
             
-              <strong><span style={{color: '#fff', backgroundColor:'#444', padding: 8}} > {this.props.children}</span> </strong>
+              <strong><span style={{color: '#fff', padding: 8}} > {this.props.children}</span> </strong>
             
          
         </div>

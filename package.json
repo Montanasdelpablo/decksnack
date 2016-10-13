@@ -6,10 +6,12 @@
     "react-scripts": "0.6.1"
   },
   "dependencies": {
+    "gsap": "^1.19.0",
     "material-ui": "^0.16.0",
     "react": "^15.3.2",
     "react-addons-css-transition-group": "^15.3.2",
     "react-bootstrap": "^0.30.5",
+    "react-css-transition-replace": "^2.0.1",
     "react-dom": "^15.3.2",
     "react-motion": "^0.4.5",
     "react-responsive": "^1.1.5",
