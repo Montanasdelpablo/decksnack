@@ -1,4 +1,8 @@
-import search from './store/search.js';
+import Search from './store/search.js';
+
+const search = new Search()
+
+window.search = search
 
 const Store = {
     search,

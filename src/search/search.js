@@ -1,23 +1,27 @@
 import React, { Component } from 'react';
 import { FormControl, Row, Col } from 'react-bootstrap';
 import { RaisedButton } from 'material-ui';
-
+import {observer} from 'mobx-react';
 import SearchResults from './searchresults.js';
 
 const searchStyles = {
   paddingTop: 30,
 }
 
-class Search extends Component {
+const Search = observer(class Search extends Component {
   constructor(){
     super()
     this.state = {
       input: '',
-      searchresults: [],
+      
     }
     this.handleSearch = this.handleSearch.bind(this)
-    this.search = this.search.bind(this)
+    
   }
+  componentWillMount(){
+    
+  }
+
   toggleDisplay(){
     let current = this.state.display
     this.setState({
@@ -31,17 +35,7 @@ class Search extends Component {
     })
     console.log(this.state.input)
   }
-  search(){
-    let val = this.state.input
-    this.props.search.find(val)
-    this.update()
-  }
-  update(){
-    let newArr = this.props.search.cards
-    this.setState({
-      searchresults: newArr
-    })
-  }
+  
 
   render() {
     return (
@@ -66,10 +60,10 @@ class Search extends Component {
 
       </Row>
         
-      <SearchResults results={this.state.searchresults} />  
+      <SearchResults search={this.props.search} />  
     </div>
     );
   }
-}
+})
 
 export default Search;
