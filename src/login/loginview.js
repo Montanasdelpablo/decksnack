@@ -21,7 +21,7 @@ const styles = {
     color: '#fff',
   },
   slide1: {
-    background: '#222',
+    background: '#424242',
   },
   slide2: {
     background: '#FEA900',
@@ -54,7 +54,7 @@ class LoginView extends Component {
                  
                    <div className="loginsignup">
                         <Row>
-                            <Tabs  value={this.state.value} onChange={this.handleChange.bind(this)} initialSelectedIndex={1}>                  
+                            <Tabs contentContainerStyle={{backgroundColor: '#424242'}} tabItemContainerStyle={{backgroundColor: '#212121'}} inkBarStyle={{backgroundColor: '#fff'}} value={this.state.value} onChange={this.handleChange.bind(this)} initialSelectedIndex={1}>                  
                                 <Tab label="Log in" value="one">
                                     <Col xs={12} md={12} lg={12} style={Object.assign({}, styles.slide, styles.slide1)}>
                                   

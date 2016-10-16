@@ -7,8 +7,7 @@ import { RaisedButton } from 'material-ui';
 const styles = {
   headline: {
     fontSize: 24,
-    paddingTop: 16,
-    marginBottom: 12,
+    paddingTop: 5,
     fontWeight: 400,
   },
   slide: {
@@ -17,11 +16,20 @@ const styles = {
     color: '#fff',
   },
   slide1: {
-    background: '#222',
+    background: '#424242',
   },
   slide2: {
     background: '#FEA900',
   },
+  label: {
+    paddingLeft: 15,
+    paddingBottom: 5,
+    marginBottom: 2,
+  },
+  input: {
+      width: '100%',
+  }
+
   
 };
 
@@ -31,27 +39,27 @@ class LoginForm extends Component {
             <Form horizontal>
                                         <FormGroup controlId="fromHorizontalUsername">
                                        
-                                            <Col bsClass="labelStyles"  sm={2} md={12} lg={12}>
+                                            <Col style={styles.label} sm={2} md={12} lg={12}>
                                                 <h4 style={styles.headline}> Username </h4>
                                             </Col>
                                         
                                             <Col sm={10} md={12} lg={12}>
-                                                <FormControl type="username" placeholder="Username" />
+                                                <FormControl style={styles.input} type="username" placeholder="Username" />
                                             </Col>
                                         </FormGroup>
                                         <FormGroup controlId="fromHorizontalPassword">
-                                            <Col bsClass="labelStyles" sm={2} md={12} lg={12}>
+                                            <Col style={styles.label} sm={2} md={12} lg={12}>
                                                 <h4 style={styles.headline}> Password </h4>
                                             </Col>
                                             <Col sm={10} md={12} lg={12}>
-                                                <FormControl type="password" placeholder="Password" />
+                                                <FormControl style={styles.input} type="password" placeholder="Password" />
                                             </Col>
                                         </FormGroup>
                                          <FormGroup>
-                                            <Col md={4} sm={2} lg={6}>
+                                            <Col md={4} sm={2} lg={4}>
                                                 <Checkbox>Remember me</Checkbox>
                                             </Col>
-                                            <Col sm={10} md={8} lg={6}>
+                                            <Col sm={10} md={8} lg={8}>
                                             <RaisedButton
                                                 label=" Log in"
                                                 fullWidth={true}

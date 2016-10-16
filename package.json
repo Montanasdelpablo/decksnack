@@ -12,6 +12,7 @@
     "material-ui": "^0.16.0",
     "mobx": "^2.6.0",
     "mobx-react": "^3.5.8",
+    "mongoose": "^4.6.3",
     "react": "^15.3.2",
     "react-addons-css-transition-group": "^15.3.2",
     "react-bootstrap": "^0.30.5",
